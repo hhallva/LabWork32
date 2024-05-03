@@ -31,6 +31,11 @@ namespace Task3
             ComboBoxLabel.Content = $"ID: {user.Id}, Логин: {user.Login}, Пароль: {user.Password}";
         }
 
+        /*   
+         *   Вариант c дублированием кода
+         *   Он позволяет нам выделять несколько несвязных объектов (не в промежутке)
+         */
+
         private void UsersListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ListBoxLabel.Content = "";
